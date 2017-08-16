@@ -1,0 +1,17 @@
+.reason {
+  &__title {
+    line-height: 30px;
+    font-size: 36px;
+    text-align: center;
+  }
+  &__item-text {
+    color: #000;
+  }
+}
+@media screen and (max-width: 780px) {
+  .reason {
+    &__title {
+      font-size: 30px;
+    }
+  }
+}

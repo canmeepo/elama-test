@@ -1,0 +1,35 @@
+.banner {
+  &__main {
+  }
+  &__title {
+    font-family: 'Geometria';
+    line-height: 40px;
+    font-size: 44px;
+  }
+  &__subtitle {
+    line-height: 28px;
+    font-size: 20px;
+    color: #525252;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .banner {
+    &__title {
+      line-height: 30px;
+      font-size: 32px;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .banner {
+    &__title {
+      text-align: center;
+    }
+    &__subtitle {
+      line-height: 24px;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
