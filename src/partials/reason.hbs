@@ -2,13 +2,29 @@
     <div class="container">
         <div class="reason__main">
             <div class="reason__title">Что вам это даст</div>
-            <div class="reason__list">
+            <div class="reason__list reason__list-des">
                 {{#each reasonItem}}
                 <div class="reason__item">
-                    <span class="reason__item-ico"><img src={{ icon }}></span>
-                    <span class="reason__item-title">{{ title }}</span>
-                    <span class="reason__item-text">{{ text }}</span>
+                    <div class="reason__item-ico"><img src={{ icon }}></div>
+                    <div class="reason__item-content">
+                        <div class="reason__item-title">{{ title }}
+                        </div>
+                        <div class="reason__item-text">{{ text }}</div>
+                    </div>
                 </div>{{/each}}
+            </div>
+            <div class="slider reason__list-mob">
+                <div class="reason__list slider-wrapper">
+                    {{#each reasonItem}}
+                    <div class="reason__item slider-item">
+                        <div class="reason__item-ico"><img src={{ icon }}></div>
+                        <div class="reason__item-content">
+                            <div class="reason__item-title">{{ title }}
+                            </div>
+                            <div class="reason__item-text">{{ text }}</div>
+                        </div>
+                    </div>{{/each}}
+                </div>
             </div>
         </div>
     </div>
