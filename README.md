@@ -12,12 +12,7 @@ git clone https://github.com/canmeepo/elama-test.git
 npm install
 ```
 
-## 2. Build
-```bash
-npm build
-```
-
-## 3. Run
+## 2. Run
 ```bash
 npm start
 ```
