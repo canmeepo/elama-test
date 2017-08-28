@@ -12,6 +12,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #002543;
 }
 * {
   box-sizing: border-box;
@@ -30,18 +31,46 @@ img {
 }
 
 .container {
-  max-width: 1260px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 120px;
 }
 .title-logo {
   font-size: 30px;
+  font-family: 'MullerExtraBold';
+  font-weight: bold;
 }
 .text-nav {
   font-size: 10px;
   text-align: right;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-family: 'MullerBold';
+  padding: 0 0 0 18px;
+}
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MullerBold';
+  src: url('../fonts/MullerBold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MullerExtraBold';
+  src: url('../fonts/MullerExtraBold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria.otf');
+  font-weight: bold;
+  font-style: normal;
 }
 @media screen and (max-width: 780px) {
   .container {
@@ -51,7 +80,7 @@ img {
     font-size: 24px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .container {
     padding: 0 15px;
   }

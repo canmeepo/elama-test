@@ -3,12 +3,12 @@
         <div class="reason__main">
             <div class="reason__title">Что вам это даст</div>
             <div class="reason__list">
+                {{#each reasonItem}}
                 <div class="reason__item">
-                    {{#each reasonItem}}
-                    <span class="reason__item-lco">{{ icon }}</span>
+                    <span class="reason__item-ico"><img src={{ icon }}></span>
                     <span class="reason__item-title">{{ title }}</span>
-                    <span class="reason__item-text">{{ text }}</span> {{/each}}
-                </div>
+                    <span class="reason__item-text">{{ text }}</span>
+                </div>{{/each}}
             </div>
         </div>
     </div>

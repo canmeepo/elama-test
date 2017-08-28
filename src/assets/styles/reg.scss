@@ -1,4 +1,4 @@
-.reason {
+.reg {
   &__title {
     line-height: 30px;
     font-size: 36px;
@@ -9,21 +9,9 @@
     color: #000;
     font-size: 15px;
   }
-  &__item-ico img {
-    width: 80px;
-    height: 80px;
-  }
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  &__item {
-    width: 33%;
-  }
 }
 @media screen and (max-width: 780px) {
-  .reason {
+  .reg {
     &__title {
       font-size: 30px;
     }

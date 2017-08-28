@@ -1,28 +1,57 @@
 .banner {
+  background: url('../img/slide.png') no-repeat;
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 500px;
+  background-color: #d8d8d8;
   &__main {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
   }
   &__title {
     font-family: 'Geometria';
     line-height: 40px;
     font-size: 44px;
+    margin-bottom: 25px;
   }
   &__subtitle {
     line-height: 28px;
     font-size: 20px;
     color: #525252;
   }
+  &__content {
+    width: 58%;
+    margin: auto 0;
+  }
 }
-
+.banner .container {
+  height: 100%;
+}
 @media screen and (max-width: 780px) {
   .banner {
+    background: url('../img/slide780.png') no-repeat;
+    background-size: cover;
+    height: 597px;
+    background-color: #d8d8d8;
+    background-position: 50% 50%;
     &__title {
       line-height: 30px;
       font-size: 32px;
+      margin-bottom: 33px;
+    }
+    &__content {
+      width: 50%;
+      margin: 86px 0 0 0;
     }
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .banner {
+    height: auto;
+    background-position: 100% 100%;
+    background: url('../img/slide320.png') no-repeat;
+    background-color: #d8d8d8;
     &__title {
       text-align: center;
     }
@@ -30,6 +59,10 @@
       line-height: 24px;
       font-size: 16px;
       text-align: center;
+    }
+    &__content {
+      width: 100%;
+      margin: 68px 0;
     }
   }
 }

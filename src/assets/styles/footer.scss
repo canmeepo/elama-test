@@ -1,6 +1,7 @@
 .footer {
   &__tel {
     font-size: 16px;
+    font-family: 'MullerBold';
   }
   &__tel-descr {
     font-size: 14px;
@@ -9,5 +10,12 @@
   &__email-text {
     font-size: 16px;
     color: #002543;
+  }
+  &__logo {
+    &-title {
+      font-size: 24px;
+      font-family: 'MullerExtraBold';
+      font-weight: bold;
+    }
   }
 }
